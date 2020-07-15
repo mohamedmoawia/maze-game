@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+    <style>
+      body{
+        margin: 0;
+        overflow: hidden;
+      }
+      .hidden{
+        display: none !important;
+      }
+      h1{
+        font-size: 64px;
+        color: aliceblue;
+        margin: 20px;
+      }
+      button{
+        background-color: transparent;
+        padding: 10px;
+        border: 2px solid white;
+        color: white;
+        cursor: pointer;
+      }
+      .winner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="winner hidden">
+      <h1>You Win!</h1>
+      <button>play again</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
